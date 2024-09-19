@@ -1,0 +1,40 @@
+.layout {
+  display: flex;
+  height: 100vh;
+
+  &--mobile {
+    flex-direction: column;
+  }
+
+  &--desktop {
+    flex-direction: row;
+  }
+
+  &__sidebar {
+    background-color: #dddddd;
+
+    &--mobile {
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      z-index: 100;
+    }
+
+    &--desktop {
+      min-width: 150px;
+      padding-top: 100px;
+    }
+  }
+
+  &__list-text {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__content {
+    flex-grow: 1;
+    padding-bottom: 80px;
+    margin-top: 20px;
+    overflow-y: auto;
+  }
+}
