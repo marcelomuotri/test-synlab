@@ -14,3 +14,6 @@ npm run dev
 
 Para test:
 npx vitest
+
+Tambien hice un deploy rapido por si lo quieres ver online
+https://test-synlab.vercel.app/home
